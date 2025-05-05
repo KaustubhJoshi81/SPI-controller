@@ -37,6 +37,7 @@ The conditional operator is used to assign datarec to COPIbuff only when the cou
 assign datarec      =   (counterbuff ==0 & SCK == 1) ? COPIbuff: 8'bz;
 
 //Testbench//
+
 The testbench is simple but barebones and the user needs to check the waveforms manually. At the start of the simulation, i have assigned values to COPI input port with some delay to check the reading functionality of the SPI controller and at the end, i have assigned value to datasend input port to check the writing functionality. 
 
 
