@@ -22,8 +22,8 @@ reg [2:0]counterbuff = 3'b0;
 The data is recieved at the rising edge of the clock cycle and COPIbuff is left-shifted [assuming that MSB is sent first] by considering only the fist 7 bits [6:0] of COPIbuff and the LSB is the COPI. 
 COPIbuff            <=  {COPIbuff[6:0], COPI};
 
-The data to be send by the peripheral deivce is loaded onto a buffer also on the rising edge if the counter is equal to 0 (3'b000).
-if (counterbuff==0)                              
+The data to be send by the peripheral deivce is loaded onto a buffer also on the rising edge if the counter is equal 3'b111.  
+if (counterbuff==3'b111)                              
     begin
         datasend_buff    <=    datasend;            
     end
