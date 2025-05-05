@@ -38,7 +38,7 @@ module SPIflash(
 always @(posedge SCK)
 begin
     COPIbuff            <=  {COPIbuff[6:0], COPI};     //Recieving and left-shifting the bit 
-    if (counterbuff==0)                              
+    if (counterbuff==3'b111)                              
     begin
         datasend_buff    <=    datasend;            //Load the data
     end
