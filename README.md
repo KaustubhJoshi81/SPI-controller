@@ -1,5 +1,5 @@
 # SPI-controller
-A simple SPI controller for peripherals like flash memory. 
+A simple SPI controller for peripherals like flash memory. The module was programmed using Verilog in AMD Vivado and the testbench was created using SystemVerilog.
 
 The module has 3 input ports and 3 output ports.
 Input ports:
