@@ -36,7 +36,9 @@ datasend_buff     <=  {datasend_buff[6:0], 1'b0};
 The conditional operator is used to assign datarec to COPIbuff only when the counter = 0.
 assign datarec      =   (counterbuff ==0 & SCK == 1) ? COPIbuff: 8'bz;
 
+
 //Testbench//
+
 
 The testbench is basic and requires manual waveform inspection. It performs two primary tests:
 
